@@ -1,0 +1,19 @@
+open gisspan.com
+giss4983
+LetMeFly@74
+//mdelete course\*.html
+//mdelete course\js\*.js
+//mdelete course\js\modules\*.js
+//mdelete course\css\*.css
+cd student1
+mput *.html
+cd css
+mput css\*.css 
+cd ..
+cd js
+mput js\*.js
+cd modules
+mput js\modules\*.js
+disconnect 
+bye
+

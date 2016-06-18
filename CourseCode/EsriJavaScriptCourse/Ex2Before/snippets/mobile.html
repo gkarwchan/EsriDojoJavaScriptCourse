@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Sets the style of the status bar for a web application when in standalone
+    mode -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>Getting Started - Mobile</title>
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/esri/css/esri.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <script type="text/javascript">
+        var dojoConfig = {
+            parseOnLoad: true
+        };
+    </script>
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2compact"></script>
+    <script type="text/javascript" src="js/mobile.js"></script>
+</head>
+
+<body>
+<div id="mapView" data-dojo-type="dojox.mobile.View" data-dojo-props="selected: true">
+    <h1 id="header" data-dojo-type="dojox.mobile.Heading">
+        <div id="aboutButton" data-dojo-type="dojox.mobile.ToolBarButton" style="float: right;" moveTo="aboutView">About</div>
+        <div id="ListButton" data-dojo-type="dojox.mobile.ToolBarButton" style="float: right;" moveTo="listView">List</div>
+    </h1>
+
+    <div id="map"></div>
+</div>
+<div id="aboutView" data-dojo-type="dojox.mobile.View">
+    <h1 data-dojo-type="dojox.mobile.Heading" data-dojo-props="back:'Map', moveTo:'mapView'">About</h1>
+
+    <p>This is the best web mobile application ever existed.</p>
+</div>
+<div id="listView" data-dojo-type="dojox.mobile.View">
+    <h1 data-dojo-type="dojox.mobile.Heading" data-dojo-props="back:'Map', moveTo:'mapView'">List</h1>
+
+    <p>This area can contain additional information about your application.</p>
+</div>
+</body>
+
+</html>

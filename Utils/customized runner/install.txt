@@ -1,0 +1,9 @@
+this runner allows you to run unit test, while you are referencing dojo from the ESRI's CDN.
+
+for esri < 3.0 use : esri_custom_runner_28 (before dojo 17).html
+for esri => 3.0 which uses Dojo syntax =>1.7 use: esri_custom_runner_32.html
+
+for the first , just place the html file in the doh directory
+for the second place the two files: esri_custom_runner_32.html and loadtests.js
+
+Please note that you can make the code better.
